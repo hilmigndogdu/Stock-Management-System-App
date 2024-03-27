@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/imageformain">
+
+    <TextView
+        android:id="@+id/skiptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="-Skip"
+        android:textColor="@color/gray"
+        android:gravity="end"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/welcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="200dp"
+        android:text="WELCOME TO"
+        android:textColor="@color/white"
+        android:fontFamily="@font/tauri"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="STOCK MANAGEMENT SYSTEM"
+        android:textStyle="bold"
+        android:fontFamily="@font/tauri"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/learnButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="LEARN"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/gray" />
+    <TextView
+        android:id="@+id/tagTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:text="-Hilmi GÜNDOĞDU-"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity2"
+    android:background="@drawable/imageforinfo2">
+
+    <TextView
+        android:id="@+id/infoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Imagine"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:id="@+id/info2Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/infoTxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="● You have warehouse"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/info3Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info2Txt"
+        android:layout_marginLeft="10dp"
+        android:text="   ⤷  Huge or small"
+        android:textColor="@color/darkgray"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/info4Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info3Txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="● And you CRUD* for your equipment"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/info5Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info4Txt"
+        android:layout_marginLeft="10dp"
+        android:text="   ⤷ Create, Read, Update, Delete"
+        android:textColor="@color/darkgray"
+        android:textStyle=""
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/info6Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info5Txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="● Is it difficult to follow these transactions?"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/info7Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info6Txt"
+        android:layout_marginLeft="10dp"
+        android:text="   ⤷ Don't be sad"
+        android:textColor="@color/darkgray"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/info8Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info7Txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="● Because you can use this application"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/info9Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info8Txt"
+        android:layout_marginLeft="10dp"
+        android:text="   ⤷ And it's free"
+        android:textColor="@color/darkgray"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="START"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tagTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/darkgray"
+        android:text="-Hilmi GÜNDOĞDU-"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

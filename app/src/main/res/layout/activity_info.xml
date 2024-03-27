@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:background="@drawable/imageforinfo">
+
+    <TextView
+        android:id="@+id/skiptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="-Skip"
+        android:textColor="@color/gray"
+        android:gravity="end"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/infoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="WHAT"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/abstractgroovy"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:id="@+id/info2Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/infoTxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="IS THIS"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/abstractgroovy"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:id="@+id/info3Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info2Txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="APPLICATION"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/tauri"
+        android:textStyle="bold|italic"
+        android:textSize="55dp"
+        />
+
+    <TextView
+        android:id="@+id/info4Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info3Txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="FOR ?"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/abstractgroovy"
+        android:textSize="70dp"/>
+
+    <TextView
+        android:id="@+id/word1Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info4Txt"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp"
+        android:text="  Actually, "
+        android:textColor="@color/green"
+        android:fontFamily="@font/tauri"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/word2Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/word1Txt"
+        android:layout_marginRight="30dp"
+        android:text="WE CAN CALL"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:fontFamily="@font/tauri"
+        android:textSize="40dp"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/word3Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/word2Txt"
+        android:layout_marginRight="30dp"
+        android:text="\u0022NOTEPAD\u0022"
+        android:textColor="@color/green"
+        android:fontFamily="@font/abstractgroovy"
+        android:textSize="40dp"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/rememberTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/green"
+        android:text="(Remember! Spoken words fly away, written words remain.)"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/tagTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/green"
+        android:text="-Hilmi GÜNDOĞDU-"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
