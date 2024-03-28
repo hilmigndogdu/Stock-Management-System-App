@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReadCardsActivity"
-    >
+    tools:context=".ProcessActivity">
+
     <TextView
         android:id="@+id/welcomeTxt"
         android:layout_width="match_parent"
@@ -15,9 +15,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:gravity="start"
-        android:text="READ"
-        android:textColor="@color/black"
-        android:fontFamily="@font/tauri"
+        android:text="-HEADLİNE-"
+        android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"/>
 
@@ -26,13 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/welcomeTxt"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:gravity="start"
-        android:text="Select the card you want to read."
-        android:textColor="@color/black"
-        android:fontFamily="@font/tauri"
+        android:text="-DESCRİPTİON-"
+        android:textColor="@color/white"
         android:textSize="20sp"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cardsRv"
@@ -44,6 +43,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.70"/>
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigaitonView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigaitonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

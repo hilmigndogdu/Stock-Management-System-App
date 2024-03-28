@@ -1,7 +1,6 @@
 package com.hilmigndogdu.graduationproject;
 
 public class Cards {
-
     private String imageName;
     private String productName;
     private String categoryName;

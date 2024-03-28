@@ -57,7 +57,7 @@
         android:layout_marginRight="20dp"
         android:text="LEARN"
         android:textSize="20sp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:textColor="@color/gray" />
     <TextView
         android:id="@+id/tagTxt"

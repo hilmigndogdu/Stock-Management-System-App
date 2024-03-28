@@ -123,7 +123,7 @@
         android:layout_marginRight="20dp"
         android:text="START"
         android:textSize="20sp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:textColor="@color/gray"
         />
 

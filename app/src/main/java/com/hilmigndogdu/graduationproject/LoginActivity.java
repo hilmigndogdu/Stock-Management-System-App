@@ -2,23 +2,15 @@ package com.hilmigndogdu.graduationproject;
 
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Binder;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.hilmigndogdu.graduationproject.databinding.ActivityLoginBinding;
-
-import java.util.ArrayList;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -53,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                     // isValid metoduna girilen bilgileri gönderiyor
                     // Return değeri doğruysa giriş yapılıp MainMenuActivitye yönlendirilecek
 
-                    Intent intenttoMenu = new Intent(LoginActivity.this, MainMenuActivity.class);
+                    Intent intenttoMenu = new Intent(LoginActivity.this, ProcessActivity.class);
                     intenttoMenu.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intenttoMenu);
 

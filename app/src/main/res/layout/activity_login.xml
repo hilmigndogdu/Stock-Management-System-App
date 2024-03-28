@@ -85,7 +85,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:backgroundTint="@color/darkblue"
         android:text="Log In"
         android:textColor="@color/white"
@@ -115,7 +115,7 @@
         android:layout_marginRight="10dp"
         android:text="Log In with Instagram"
         android:textSize="15sp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:textColor="@color/white"
         android:drawableStart="@drawable/instagramicon"
         />

@@ -103,7 +103,7 @@
         android:layout_marginRight="10dp"
         android:text="Sign Up"
         android:textSize="20sp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:backgroundTint="@color/darkblue"
         android:textColor="@color/white"
         />
@@ -119,7 +119,7 @@
         android:layout_marginRight="10dp"
         android:text="Sign Up with Instagram"
         android:textSize="15sp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/buttons"
         android:textColor="@color/white"
         android:drawableStart="@drawable/instagramicon"
         />
@@ -148,7 +148,7 @@
         android:layout_marginLeft="210dp"
         android:text="   Log In ! "
         android:textSize="20sp"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         />
 
     <TextView

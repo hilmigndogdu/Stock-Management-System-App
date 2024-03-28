@@ -14,29 +14,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class ReadCardAdapter extends RecyclerView.Adapter<ReadCardAdapter.ObjectHolder> {
+public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewObjectHolder> {
 
-    private Context context;
-
+    private Context mContext;
     private List<Cards> cardsList;
 
-    public ReadCardAdapter(Context context, List<Cards> cardsList){
-
-        this.context = context;
+    public CardAdapter(Context mContext, List<Cards> cardsList) {
+        this.mContext = mContext;
         this.cardsList = cardsList;
     }
 
-    public class ObjectHolder extends RecyclerView.ViewHolder{
+    public class CardViewObjectHolder extends RecyclerView.ViewHolder{
 
-        public ImageView cardImg;
+        public ImageView productImg;
         public TextView productName;
         public TextView categoryName;
         public TextView brandName;
         public Button selectBtn;
-        public ObjectHolder(@NonNull View itemView) {
+
+        public CardViewObjectHolder(@NonNull View itemView) {
             super(itemView);
 
-            cardImg = itemView.findViewById(R.id.productimg);
+            productImg = itemView.findViewById(R.id.productimg);
             productName = itemView.findViewById(R.id.productTxt);
             categoryName = itemView.findViewById(R.id.categoryTxt);
             brandName = itemView.findViewById(R.id.brandTxt);
@@ -46,39 +45,30 @@ public class ReadCardAdapter extends RecyclerView.Adapter<ReadCardAdapter.Object
 
     @NonNull
     @Override
-    public ObjectHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CardViewObjectHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.card_design, parent, false);
-
-        return new ObjectHolder(itemView);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_design,parent,false);
+        return new CardViewObjectHolder(itemView);
     }
+
     @Override
-    public void onBindViewHolder(@NonNull ObjectHolder holder, int position) {
+    public void onBindViewHolder(@NonNull CardViewObjectHolder holder, int position) {
+
         Cards card = cardsList.get(position);
 
+        holder.productImg.setImageResource(mContext.getResources().getIdentifier(card.getImageName(),"drawable",mContext.getPackageName()));
         holder.productName.setText(card.getProductName());
         holder.categoryName.setText(card.getCategoryName());
-        holder.brandName.setText(card.getBrandName());
-        holder.cardImg.setImageResource(context.getResources()
-                .getIdentifier(card.getImageName(),"drawable", context.getPackageName()));
-
-
+        holder.brandName.setText(card.getCategoryName());
         holder.selectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-                Toast.makeText(context, "SELECTED Product : " + card.getProductName(), Toast.LENGTH_SHORT).show();
-
+            public void onClick(View v) {
             }
         });
     }
 
     @Override
     public int getItemCount() {
-
         return cardsList.size();
-
     }
-
 }
