@@ -1,6 +1,7 @@
 package com.hilmigndogdu.graduationproject;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,7 +44,9 @@ public class ProcessActivity extends AppCompatActivity {
         //Bu kod parçaları, RecyclerView'in istediğim gibi çalışması için kullanılıyor
 
         binding.cardsRv.setHasFixedSize(true);
-        binding.cardsRv.setLayoutManager(new LinearLayoutManager(this));
+
+
+
 
         Cards television = new Cards("televisionimg","Television","Technology","Samsung");
         Cards phone = new Cards("phoneimg","Mobile Phone","Technology","Apple");
